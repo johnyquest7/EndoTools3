@@ -1,2 +1,15 @@
-Endo Tools is a medical calculator used by endocrinologists. 
-This project has the X-code project files
+# EndoCalc PWA
+
+This repository now contains a GitHub Pages-friendly Progressive Web App version of Endo Tools.
+
+## Features
+- Endocrinology calculators grouped by category.
+- Inspired UI matching https://johnyquest7.github.io/Endocrinology.io/ style.
+- Installable from the browser (PWA) on desktop/mobile.
+- Offline support with a service worker.
+
+## Local run
+Open `index.html` with a local web server for module loading (for example `python3 -m http.server 4173`).
+
+## GitHub Pages
+Publish the repository root on GitHub Pages. The app is static and requires no backend.

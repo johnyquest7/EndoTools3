@@ -1,0 +1,87 @@
+:root {
+  --primary-color: #2c7a9e;
+  --background-color: #f7fafc;
+  --text-color: #1f2937;
+  --border-color: #dbe3ec;
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  color: var(--text-color);
+  background: var(--background-color);
+}
+
+.header {
+  background: var(--primary-color);
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+.subtitle { margin: 0.25rem 0 0.75rem; opacity: 0.95; }
+.install-button {
+  border: none;
+  background: #fff;
+  color: var(--primary-color);
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.main-container {
+  max-width: 1100px;
+  margin: 1.5rem auto;
+  padding: 0 1rem;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.category {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+.category-header {
+  background: var(--primary-color);
+  color: #fff;
+  padding: 0.75rem 1rem;
+}
+.category-header h2 { margin: 0; font-size: 1.1rem; }
+.category-content { padding: 0.75rem; }
+
+.calculator-link {
+  display: block;
+  padding: 0.65rem;
+  text-decoration: none;
+  color: var(--text-color);
+  border-bottom: 1px solid var(--border-color);
+}
+.calculator-link:last-child { border-bottom: none; }
+.calculator-link:hover { background: #f3f8fb; }
+
+.hidden { display: none !important; }
+
+.calculator-container {
+  max-width: 860px;
+  margin: 1.5rem auto;
+  padding: 0 1rem 1rem;
+}
+.calculator-page { background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+.calculator-header { background: var(--primary-color); color: #fff; padding: 0.75rem 1rem; display: flex; gap: 1rem; align-items: center; }
+.calculator-header h2 { margin: 0; font-size: 1.1rem; }
+.back-button { border: none; background: #fff; color: var(--primary-color); border-radius: 6px; padding: 0.4rem 0.7rem; font-weight: 600; cursor: pointer; }
+.calculator-content { padding: 1rem; }
+
+.form-grid { display: grid; gap: 0.75rem; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); }
+label { font-size: 0.9rem; font-weight: 600; display: block; margin-bottom: 0.25rem; }
+input, select, button { font: inherit; }
+input, select { width: 100%; padding: 0.45rem; border: 1px solid var(--border-color); border-radius: 6px; }
+.calc-button { margin-top: 0.75rem; border: none; border-radius: 8px; background: var(--primary-color); color: #fff; padding: 0.55rem 0.9rem; cursor: pointer; }
+.result { margin-top: 0.75rem; background: #eef6fb; border-radius: 8px; padding: 0.65rem; font-weight: 600; }
+.note { font-size: 0.88rem; color: #4b5563; }
+
+iframe.reference { width: 100%; min-height: 72vh; border: 1px solid var(--border-color); border-radius: 8px; }
